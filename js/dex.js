@@ -11,17 +11,17 @@ var HttpClient = function () {
 }
 var theurl = 'https://meme-api.herokuapp.com/gimme';
 var client = new HttpClient();
-document.getElementById('img').src = "../loading.png";
+document.getElementById('memeImage').src = "../loading.png";
 client.get(theurl, function (response) {
     var response1 = JSON.parse(response);
     // alert(response);
     document.getElementById('title').innerHTML = response1.title;
-    document.getElementById('img').src = response1.preview[3]; 
+    document.getElementById('memeImage').src = response1.preview[3]; 
 });
 
 next = () => {
     document.getElementById('title').innerHTML = "Meming...";
-    document.getElementById('img').src = `loading.png`;
+    document.getElementById('memeImage').src = `../loading.png`;
     client.get(theurl, function (response) {
         var response1 = JSON.parse(response);
         // alert(response);
@@ -33,6 +33,8 @@ next = () => {
         else {
             document.getElementById('title').innerHTML = response1.title;
         }
-        document.getElementById('img').src = response1.preview[3];
+        document.getElementById('memeImage').src = response1.preview[3];
     });
 }
+
+// document.getElementById('memeImage').scr = '../loading.png';

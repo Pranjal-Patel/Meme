@@ -3,13 +3,14 @@
     padding: 10px;
     margin: 5px;
     border: 2px solid rgb(189, 187, 187);
+    font-size: 40px;
 }
 
-.main{
+body{
     align-items: center;
     background: url("../i.jpg");
-    min-height: 100vh;
-    background-size: 110vw 110vh;
+    min-height: 110vh;
+    background-size: 150vw 150vh;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -27,11 +28,12 @@
     border-bottom: 1vh solid rgb(189, 187, 187);
     border-right: 1vh solid rgb(189, 187, 187);
     border-left: 1vh solid rgb(189, 187, 187);
-    height: 60vh;
-    width: 50vw;
+    height: 40vmax;
+    width: 40vmax;
 }
 
 .title{
+    font-size: 20px;
     border: 1vh solid rgb(189, 187, 187);
     background: rgb(189, 187, 187);
     margin: 1vh;
