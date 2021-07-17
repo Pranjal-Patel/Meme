@@ -1,0 +1,38 @@
+.btn{
+    /* border: 2px solid cyan; */
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid rgb(189, 187, 187);
+}
+
+.main{
+    align-items: center;
+    background: url("../i.jpg");
+    min-height: 100vh;
+    background-size: 110vw 110vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    background: rgb(189, 187, 187);
+    width: 100vw;
+    height: 10vh
+}
+
+.img{
+    border-top: 1vh solid rgb(189, 187, 187);
+    border-bottom: 1vh solid rgb(189, 187, 187);
+    border-right: 1vh solid rgb(189, 187, 187);
+    border-left: 1vh solid rgb(189, 187, 187);
+    height: 60vh;
+    width: 50vw;
+}
+
+.title{
+    border: 1vh solid rgb(189, 187, 187);
+    background: rgb(189, 187, 187);
+    margin: 1vh;
+}
